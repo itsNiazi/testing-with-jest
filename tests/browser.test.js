@@ -33,3 +33,8 @@ describe('Clicking "Pusha till stacken"', () => {
     await alert.accept();
   });
 });
+
+test("Content of header should be 'Hello, world!'", async () => {
+  let text = await driver.findElement(By.id("text")).getText();
+  expect(text).toEqual("Hello, world");
+});
