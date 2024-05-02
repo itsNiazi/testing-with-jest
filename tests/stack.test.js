@@ -19,5 +19,5 @@ test("peek on stack with two or more elements returns the top element", () => {
 });
 
 test("The string 'Hello, world!' to be returned", () => {
-  expect(stack.textMessage()).toBe("Hello");
+  expect(stack.textMessage()).toBe("Hello, world!");
 });
